@@ -13,9 +13,6 @@
     "express": "~4.15.2",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
-    "react": "^15.6.1",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^15.6.1",
     "serve-favicon": "~2.4.2"
   }
 }
