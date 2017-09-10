@@ -1,5 +1,41 @@
 extends layout
 
 block content
-  h1= title
-  
+  header
+      div.row
+        div.logo
+          a(href="/index") Lhandler
+        nav(id="main-nav-wrap")
+          ul.main-navigation
+            li.current
+              a.smoothscroll(href="#intro" title) Home
+            li
+              a.smoothscroll(href="#pricing" title) Order
+            li.highlight.with-sep
+              a(href="#", title) Sign Up
+        a.menu-toggle(href="#")
+          span Menu
+  // END header
+  // SECTION home
+  section(id="intro")
+    div.shadow-overlay
+    div.intro-content
+      div.row
+        div.col-twelve
+          h5 רשימת אורחים
+          h1 צריך למלא פה טקסט
+  // END SECTION home
+  // SECTION orders
+  section(id="pricing")
+    div.row.section-intro
+      div.col-twelve.with-bottom-line
+        h5 מה לקחתי
+        h1 למלא פה טקסט
+        p.lead אפשר להכניס פה קצת הסבר על החלק הזה
+      div.row.pricing-content
+        div.pricing-tables.block-1-4.group
+          div.bgrid
+            div.price-block
+              div.top-part
+                h3.plan-title אנטריקוט
+                p.plan-price
