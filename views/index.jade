@@ -18,19 +18,20 @@ block content
         h3 צריך
           //- span למלא פה
           //- בטקסט
+    p.scrolldown
+      a.scrollsmooth(href="#about")
+        
 
   // SECTION about
   section(id="about")
     div.row
-      div.three.columns
-        img.profile-pic(src="images/profilepic.jpg", alt)
-      div.nine.columns.main-col
-        h2 על עצמי
-        p עוד קצת טקסט על עצמי
-        //- div.row
-        //-   div.columns.contact-details
-        //-     h2 Contact Details
-        //-     p סתם אם בא לי לכתוב משהו - לא חייב
+      div.twelve.columns.collapsed
+        div.bgrid-quarters.s-bgrid-thirds.cf(id="portfolio-wrapper")
+          div.item-wrap
+            a(href="#modal-01", title)
+              img.profile-pic(src="images/profilepic.jpg", alt)
+            a(href="#modal-01", title)
+              img.profile-pic(src="images/profilepic.jpg", alt)
   
   // END SECTION about
   // SECTION portfolio
